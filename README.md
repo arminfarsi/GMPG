@@ -6,3 +6,8 @@ You can automatically gather and copy all the music in your groove music playlis
 Obviously, it will only work on windows.
 
 Next updates will include "Update Playlist".
+
+You need the following packages for this program to run:
+  * os
+  * bs4
+  * shutil
