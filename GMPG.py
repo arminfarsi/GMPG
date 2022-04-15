@@ -36,7 +36,7 @@ for playlist in playlists_names:
     name = playlist[:-4]
     playlists_dictionary[name] = []
     tracktitles_dictionary[name] = []
-    with open(input_load + '\\' + playlist) as musics:
+    with open(input_load + '\\' + playlist, encoding='utf-8') as musics:
         music_raw_list = BeautifulSoup(musics.read(), 'html.parser').find_all('media')
         for media in music_raw_list:
             music_source = str(media.get('src'))
